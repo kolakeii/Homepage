@@ -1,0 +1,80 @@
+.center {
+    margin-left: auto;
+    margin-right: auto;
+}
+td{
+    padding-left: 40px;
+    padding-right: 40px;
+}
+.right{
+    text-align: right;
+}
+.box{
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    height: 200px;
+    margin: 5px;
+    border: 3px solid;
+}
+.child{
+    padding: 90px;
+    font-family: 'georgia';
+    font-size: 20px;
+    font-weight: bold; 
+    transform-origin: center;
+    animation-duration: 1s;
+}
+p{
+    font-size: 15px;
+}
+.col{
+    background-color: rgb(255, 255, 255);
+    height: 900px;
+    width: 500px;
+    float: left;
+    border: 3px solid;
+    margin: 5px;
+    text-align: center;
+}
+h2{
+    align-self: flex-end;
+    transform-origin: center;
+    animation-duration: 2s;
+
+}
+.container{
+    display: flex;
+    justify-content: center;
+}
+img{
+    align-items: right;
+}
+p{
+    text-justify: auto;
+    font-size: 10pt;
+    padding: 10px;
+    width: 95%;
+    margin: 10px auto;
+    text-align: justify;
+
+}
+.pop:hover {
+    animation-name: pop;
+    animation-timing-function: ease;
+}
+.up:hover {
+    animation-name: up;
+    animation-timing-function: ease;
+}
+@keyframes pop {
+    0%   { transform: scale(1); }
+    25%   { transform: scale(1.2); }
+    50% { transform: scale(1); }
+    75% { transform: scale(1.2); }
+    100% { transform: scale(1); }
+}
+@keyframes up {
+    0%   { transform: scale(1); }
+    50% { transform: scale(1.2); }
+    100% { transform: scale(1); }
+}
